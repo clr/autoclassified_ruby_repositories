@@ -1,6 +1,7 @@
 class Pump
-  @queue = :autoclassified_ruby_repositories
-
-  def self.perform(url)
+  def initialize(url_array)
+    url_array.each do |url|
+      Resque.enqueue(GitFetch, url)
+    end
   end
 end
