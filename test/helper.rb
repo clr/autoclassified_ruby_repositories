@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler'
+require 'resque_unit'
 require File.join(File.dirname(__FILE__), '..', 'lib', 'autoclassified_ruby_repositories.rb')
 
 begin
