@@ -1,0 +1,7 @@
+
+THEY TOOK MEH JABS!
+We need Resque in order to handle the job processing.  You need to install Redis and
+Resque, and then start the queue with:
+
+QUEUE=autoclassified_ruby_repositories rake resque:work
+
