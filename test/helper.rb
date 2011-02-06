@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'bundler'
+require 'fakeweb'
+
 require File.join(File.dirname(__FILE__), '..', 'lib', 'autoclassified_ruby_repositories.rb')
 
 begin
