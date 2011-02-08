@@ -5,7 +5,7 @@ class GitFetch
   def self.perform(url)
     repo_directory = File.join(File.dirname(__FILE__), '..', 'repos')
     Dir.mkdir(repo_directory) unless Dir.exists?(repo_directory)
-    `cd #{repo_directory}; git clone #{url}`
+    `cd #{repo_directory}; git clone --depth=1 #{url}`
     
   end
 end
