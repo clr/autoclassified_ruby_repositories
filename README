@@ -1,0 +1,2 @@
+So, uh....  Do we want to store the metric-fu data in Riak?  If we can write the 
+autoclassification algorithm in Erlang, then that might be really fast.
