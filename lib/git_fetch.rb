@@ -3,7 +3,9 @@ class GitFetch
 
   # Grab the repo and stick it in /tmp
   def self.perform(url)
-    raise "*SIGH!!!!!!!!!*"
+    repo_directory = File.join(File.dirname(__FILE__), '..', 'repos')
+    Dir.mkdir(repo_directory) unless Dir.exists?(repo_directory)
+    `cd #{repo_directory}; git clone #{url}`
     
   end
 end
