@@ -2,6 +2,7 @@ require 'helper'
 
 class TestGitHubGrab < Test::Unit::TestCase
   def setup
+    Resque.reset!
     @http_response =<<-HTML
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
